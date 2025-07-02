@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  .animated-float {
+      animation: floatUpDown 3s ease-in-out infinite;
+  }
+
+  @keyframes floatUpDown {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+  }
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeach - Premium Taxi Booking Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" data-aos="fade-right" data-aos-duration="1000">
+                <img src="https://reeach.in/logonew.svg" alt="Reeach Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="400">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="500">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="600">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item" data-aos="fade-down" data-aos-delay="700">
+                    <a href="#" class="nav-link cta-btn" onclick="openBookingModal()">Book Now</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000">
+                     Premium Rides <span class="gradient-text typing-text">With Reeach </span> Always
+</h1>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    Whether it’s your daily commute or a late-night airport drop, trust Reeach to deliver smooth, affordable rides — always on time, always reliable.
+
+
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <button class="btn btn-primary pulse-btn" onclick="openBookingModal()">
+                        <i class="fas fa-car"></i>
+                        Book Your Ride
+                    </button>
+                    <button class="btn btn-secondary hover-lift">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="stat counter-item">
+                        <h3 data-count="50000">0</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat counter-item">
+                        <h3 data-count="1000">0</h3>
+                        <p>Professional Drivers</p>
+                    </div>
+                    <div class="stat counter-item">
+                        <h3 data-count="24">0</h3>
+                        <p>Hours Service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container" style="background: transparent;">
+    <img src="https://i.ibb.co/R4DmxYbh/reeachpng.png" 
+         alt="Taxi Booking UI" 
+         class="custom-hero-image animated-float"
+         style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: none;">
+</div>
+
+
+<style>
+    .custom-hero-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .animated-float {
+        animation: floatUpDown 3s ease-in-out infinite;
+    }
+
+    @keyframes floatUpDown {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+</style>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element element-1 float-animation"></div>
+            <div class="floating-element element-2 float-animation" style="animation-delay: 2s;"></div>
+            <div class="floating-element element-3 float-animation" style="animation-delay: 4s;"></div>
+            <div class="floating-element element-4 rotate-animation"></div>
+            <div class="floating-element element-5 pulse-animation"></div>
+        </div>
+    </section>
+
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-text" data-aos="fade-up">Trusted by 200+ Companies Worldwide</p>
+            <div class="logos-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="logo-item hover-lift">Google</div>
+                <div class="logo-item hover-lift">Microsoft</div>
+                <div class="logo-item hover-lift">Amazon</div>
+                <div class="logo-item hover-lift">Apple</div>
+                <div class="logo-item hover-lift">Uber</div>
+                <div class="logo-item hover-lift">Netflix</div>
+                <div class="logo-item hover-lift">Tesla</div>
+                <div class="logo-item hover-lift">Spotify</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-aos="fade-right" data-aos-duration="1000">What is Reeach?</h2>
+                    <p class="section-description" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                        Reeach is India’s own smart, affordable, and reliable taxi booking platform – made for the way we travel. From daily office commutes to airport drops and outstation rides, Reeach connects you with trusted drivers in just a few taps. No surge pricing, no confusion – just smooth, safe, and budget-friendly travel every single time.
+
+
+                    </p>
+                    <p class="section-description" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                        With features like live ride tracking, voice booking, secure payments, and 24/7 support, Reeach is built to make cab travel easier and more comfortable for everyone — from metro cities to small towns across India.
+                    </p>
+                    <div class="about-features" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+                        <div class="feature-item hover-scale">
+                            <i class="fas fa-shield-alt pulse-icon"></i>
+                            <span>Safe & Secure</span>
+                        </div>
+                        <div class="feature-item hover-scale">
+                            <i class="fas fa-clock pulse-icon"></i>
+                            <span>24/7 Available</span>
+                        </div>
+                        <div class="feature-item hover-scale">
+                            <i class="fas fa-star pulse-icon"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-grid">
+                    <div class="grid-item hover-lift rotate-on-hover" data-aos="zoom-in" data-aos-delay="200" style="background: linear-gradient(135deg, #005CFF, #008CFF);">
+                        <i class="fas fa-mobile-alt bounce-icon"></i>
+                        <h3>Mobile First</h3>
+                    </div>
+                    <div class="grid-item hover-lift rotate-on-hover" data-aos="zoom-in" data-aos-delay="400" style="background: linear-gradient(135deg, #8B5CF6, #A855F7);">
+                        <i class="fas fa-bolt bounce-icon"></i>
+                        <h3>Lightning Fast</h3>
+                    </div>
+                    <div class="grid-item hover-lift rotate-on-hover" data-aos="zoom-in" data-aos-delay="600" style="background: linear-gradient(135deg, #10B981, #059669);">
+                        <i class="fas fa-shield-alt bounce-icon"></i>
+                        <h3>Secure</h3>
+                    </div>
+                    <div class="grid-item hover-lift rotate-on-hover" data-aos="zoom-in" data-aos-delay="800" style="background: linear-gradient(135deg, #F59E0B, #D97706);">
+                        <i class="fas fa-users bounce-icon"></i>
+                        <h3>Community</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title white" data-aos="fade-up" data-aos-duration="1000">What do we offer?</h2>
+                <p class="section-description white" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Everything You Need, Powered by Reeach</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Round-the-clock assistance for all your travel needs</p>
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Advanced Scalability</h3>
+                    <p>Seamlessly scales with growing demand and user base</p>
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-Platform Integration</h3>
+                    <p>Available across all devices and platforms</p>
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-shield"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>APay safely with UPI, wallets, cards, or cash – your data is always protected.</p>
+                    
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Voice Command Booking</h3>
+                    <p>Just speak to book Reeach AI makes it effortless even on-the-go.</p>
+                </div>
+
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-inr"></i>
+                    </div>
+                    <h3>Affordable Pricing. No Surge.</h3>
+                    <p>Transparent fares, no hidden charges save more with every Reeach ride.</p>
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="500">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Rewards Program</h3>
+                    <p>Earn points and get rewards for every ride you take.</p>
+                </div>
+                <div class="service-card hover-lift" data-aos="flip-left" data-aos-delay="600">
+                    <div class="service-icon pulse-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Travel</h3>
+                    <p>Manage your corporate travel with ease and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text">
+                    <h2 class="section-title" data-aos="fade-right" data-aos-duration="1000">Reeach Core Features</h2>
+                    <div class="features-list">
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>Instant Booking & Confirmation</span>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>Real-time GPS Tracking</span>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>Multiple Payment Options</span>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>Professional Verified Drivers</span>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="500">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>Works Even in Low Network Areas</span>
+                        </div>
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="600">
+                            <i class="fas fa-check bounce-icon"></i>
+                            <span>24/7 Emergency Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-image" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="driver-card hover-lift">
+                        <div class="driver-info slide-in-right">
+                            <div class="driver-avatar pulse-avatar"></div>
+                            <div class="driver-details">
+                                <h4>Nishant Shukla</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star star-animation"></i>
+                                    <span>4.9</span>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="trip-info slide-in-left">
+                            <div class="trip-route">
+                                <div class="route-point">
+                                    <i class="fas fa-circle pulse-icon"></i>
+                                    <span>Connaught Pplace</span>
+                                </div>
+                                <div class="route-line animated-route"></div>
+                                <div class="route-point">
+                                    <i class="fas fa-map-marker-alt pulse-icon"></i>
+                                    <span>Delhi Airport</span>
+                                </div>
+                            </div>
+                            <div class="trip-price counter-price" data-price="24.50">₹0.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="standard-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Standard Features on Reeach</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Everything you need for a perfect ride experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Advanced Search</h3>
+                    <p>Find rides with intelligent search and filtering</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Smart Filtering</h3>
+                    <p>Filter by price, car type, and driver ratings</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Real-time Notifications</h3>
+                    <p>Stay updated with instant ride notifications</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-language Support</h3>
+                    <p>Available in 25+ languages worldwide</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Protocols</h3>
+                    <p>End-to-end encryption for all data</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customizable Interface</h3>
+                    <p>Personalize your app experience</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Route Optimization</h3>
+                    <p>Smart routing for fastest journeys</p>
+                </div>
+                 <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-cab"></i>
+                    </div>
+                    <h3>Smart Ride History </h3>
+                    <p>Keep track of all your past rides in one place</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <p>Inclusive design for all users</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Scheduled Rides</h3>
+                    <p>Plan your trips in advance with scheduled rides.</p>
+                </div>
+                <div class="feature-card hover-lift" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="feature-icon pulse-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>In-App Wallet</h3>
+                    <p>Manage your payments easily with our in-app wallet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="technology animate-on-scroll" id="technology">
+  <div class="container">
+    <h2 class="section-title center">🚀 Technology We Use</h2>
+    <p class="section-subtitle center">
+      Empowered by modern tech-stack for blazing-fast performance, security & scalability.
+    </p>
+    <div class="tech-grid">
+      <div class="tech-card react">
+        <i class="fab fa-react animated-icon"></i>
+        <h3>React Native</h3>
+        <p>Cross-platform mobile development</p>
+      </div>
+      <div class="tech-card node">
+        <i class="fab fa-node-js animated-icon"></i>
+        <h3>Node.js</h3>
+        <p>Server-side JavaScript runtime</p>
+      </div>
+      <div class="tech-card mongo">
+        <i class="fas fa-leaf animated-icon"></i>
+        <h3>MongoDB</h3>
+        <p>NoSQL database solution</p>
+      </div>
+      <div class="tech-card aws">
+        <i class="fab fa-aws animated-icon"></i>
+        <h3>AWS Cloud</h3>
+        <p>Scalable cloud infrastructure</p>
+      </div>
+      <div class="tech-card docker">
+        <i class="fab fa-docker animated-icon"></i>
+        <h3>Docker</h3>
+        <p>Containerization platform</p>
+      </div>
+      <div class="tech-card redis">
+        <i class="fas fa-database animated-icon"></i>
+        <h3>Redis</h3>
+        <p>In-memory data structure store</p>
+      </div>
+      <div class="tech-card graphql">
+        <i class="fas fa-project-diagram animated-icon"></i>
+        <h3>GraphQL</h3>
+        <p>Query language for APIs</p>
+      </div>
+      <div class="tech-card typescript">
+        <i class="fab fa-js-square animated-icon"></i>
+        <h3>TypeScript</h3>
+        <p>Typed JavaScript superset</p>
+      </div>
+      <div class="tech-card kubernetes">
+        <i class="fas fa-dharmachakra animated-icon"></i>
+        <h3>Kubernetes</h3>
+        <p>Container orchestration</p>
+      </div>
+      <div class="tech-card postgresql">
+        <i class="fas fa-elephant animated-icon"></i>
+        <h3>PostgreSQL</h3>
+        <p>Advanced relational database</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Frequently Asked Questions</h2>
+                <p class="section-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Have doubts? Get answers right here</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I book a ride with Reeach?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply download our app, enter your pickup and destination locations, choose your preferred ride type, and confirm your booking. A driver will be assigned to you within minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Is Reeach available 24/7?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Reeach operates 24 hours a day, 7 days a week. Our drivers are available round the clock to serve you whenever you need a ride.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, debit cards, digital wallets (Apple Pay, Google Pay), and cash payments. All transactions are secure and encrypted.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Can I track my ride in real-time?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our app provides real-time GPS tracking so you can see your driver's location and estimated arrival time throughout your journey.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>How do I become a Reeach driver?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To become a driver, download our driver app, complete the registration process, submit required documents, and pass our background check. Once approved, you can start earning immediately.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>What safety measures does Reeach have?</span>
+                        <i class="fas fa-chevron-down rotate-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We conduct thorough background checks on all drivers, provide real-time ride tracking, emergency assistance button, driver and vehicle verification, and 24/7 customer support for safety concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title" data-aos="fade-right" data-aos-duration="1000">Get in Touch</h2>
+                    <p class="section-description" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                        Have questions or need support? We're here to help you 24/7.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item hover-scale" data-aos="fade-right" data-aos-delay="300">
+                            <i class="fas fa-phone pulse-icon"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 7012625811</p>
+                            </div>
+                        </div>
+                        <div class="contact-item hover-scale" data-aos="fade-right" data-aos-delay="400">
+                            <i class="fas fa-envelope pulse-icon"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>support@reeach.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-item hover-scale" data-aos="fade-right" data-aos-delay="500">
+                            <i class="fas fa-map-marker-alt pulse-icon"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p> 6M27+2MW, Singrauli, Madhya Pradesh 486889</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required class="input-animation">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="input-animation">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" class="input-animation">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required class="input-animation">
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="driver">Driver Application</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required class="input-animation"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary pulse-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h3>About Reeach</h3>
+                    <ul>
+                        <li><a href="#" class="hover-underline">Our Story</a></li>
+                        <li><a href="#" class="hover-underline">Careers</a></li>
+                        <li><a href="#" class="hover-underline">Press</a></li>
+                        <li><a href="#" class="hover-underline">Blog</a></li>
+                        <li><a href="#" class="hover-underline">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" class="hover-underline">Ride Booking</a></li>
+                        <li><a href="#" class="hover-underline">Corporate Travel</a></li>
+                        <li><a href="#" class="hover-underline">Airport Transfers</a></li>
+                        <li><a href="#" class="hover-underline">City Tours</a></li>
+                        <li><a href="#" class="hover-underline">Premium Rides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#" class="hover-underline">Help Center</a></li>
+                        <li><a href="#" class="hover-underline">Contact Us</a></li>
+                        <li><a href="#" class="hover-underline">Safety</a></li>
+                        <li><a href="#" class="hover-underline">Terms of Service</a></li>
+                        <li><a href="#" class="hover-underline">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="hover-lift"><i class="fab fa-facebook bounce-icon"></i></a>
+                        <a href="#" class="hover-lift"><i class="fab fa-twitter bounce-icon"></i></a>
+                        <a href="#" class="hover-lift"><i class="fab fa-instagram bounce-icon"></i></a>
+                        <a href="#" class="hover-lift"><i class="fab fa-linkedin bounce-icon"></i></a>
+                        <a href="#" class="hover-lift"><i class="fab fa-youtube bounce-icon"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="input-animation">
+                            <button type="submit" class="hover-lift"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="500">
+                <p>&copy; 2024 Reeach. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="hover-underline">Privacy Policy</a>
+                    <a href="#" class="hover-underline">Terms of Service</a>
+                    <a href="#" class="hover-underline">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="#home" class="bottom-nav-link active">
+            <i class="fas fa-home"></i>
+            <span class="bottom-nav-text">Home</span>
+        </a>
+        <a href="#about" class="bottom-nav-link">
+            <i class="fas fa-user"></i>
+            <span class="bottom-nav-text">About</span>
+        </a>
+        <a href="#services" class="bottom-nav-link">
+            <i class="fas fa-concierge-bell"></i>
+            <span class="bottom-nav-text">Services</span>
+        </a>
+        <a href="#" class="bottom-nav-link">
+            <i class="fas fa-download"></i>
+            <span class="bottom-nav-text">Download</span>
+        </a>
+        <a href="#contact" class="bottom-nav-link">
+            <i class="fas fa-comment"></i>
+            <span class="bottom-nav-text">Contact</span>
+        </a>
+    </nav>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Ride</h2>
+                <span class="close hover-scale" onclick="closeBookingModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="pickup">Pickup Location</label>
+                        <input type="text" id="pickup" name="pickup" placeholder="Enter pickup location" required class="input-animation">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" name="destination" placeholder="Enter destination" required class="input-animation">
+                    </div>
+                    <div class="form-group">
+                        <label for="rideType">Ride Type</label>
+                        <select id="rideType" name="rideType" required class="input-animation">
+                            <option value="">Select ride type</option>
+                            <option value="standard">Standard - ₹12.50</option>
+                            <option value="premium">Premium - ₹18.00</option>
+                            <option value="shared">Shared - ₹8.75</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingTime">Booking Time</label>
+                        <select id="bookingTime" name="bookingTime" required class="input-animation">
+                            <option value="now">Book Now</option>
+                            <option value="later">Schedule for Later</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary pulse-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top hover-lift">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
